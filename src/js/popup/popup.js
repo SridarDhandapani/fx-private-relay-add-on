@@ -1475,8 +1475,8 @@
         // Dismiss the browserActionBadge only when it exists
         if (browserActionBadgesClicked === false) {
           browser.storage.local.set({ browserActionBadgesClicked: true });
-          browser.browserAction.setBadgeBackgroundColor({ color: null });
-          browser.browserAction.setBadgeText({ text: "" });
+          chrome.action.setBadgeBackgroundColor({ color: null });
+          chrome.action.setBadgeText({ text: "" });
         }
       },
       enableInputIconDisabling: async () => {

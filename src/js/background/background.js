@@ -494,10 +494,10 @@ async function displayBrowserActionBadge() {
   }
 
   if (!browserActionBadgesClicked && (serverStoragePrompt !== true || privacyNoticeUpdatePromptShown !== true)) {
-    browser.browserAction.setBadgeBackgroundColor({
+    chrome.action.setBadgeBackgroundColor({
       color: "#00D900",
     });
-    browser.browserAction.setBadgeText({ text: "!" });
+    chrome.action.setBadgeText({ text: "!" });
   }
 }
 

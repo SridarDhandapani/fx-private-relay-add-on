@@ -16,23 +16,16 @@
   "browser_specific_settings": {
       "gecko": {
           "id": "private-relay@firefox.com",
-          "strict_min_version": "109.0"
+          "strict_min_version": "121.0"
       },
       "gecko_android": {
           "id": "private-relay@firefox.com",
-          "strict_min_version": "120.0"
+          "strict_min_version": "121.0"
       }
   },
 
   "background": {
-      "service_worker": "js/background/service-worker.js",
-      "scripts": [
-        "js/shared/mv3-shim.js",
-        "js/libs/browser-polyfill.min.js",
-        "js/shared/utils.js",
-        "js/background/background.js",
-        "js/background/context-menu.js"
-      ]
+      "service_worker": "js/background/service-worker.js"
   },
 
   "action": {
